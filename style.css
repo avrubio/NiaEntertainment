@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 :root {
-  background-color: rgb(198, 241, 249);
-  color: black;
+  --my-color: rgb(198, 241, 249);
+  /* or any other variables/style */
+}
+[data-theme="dark"] {
+  --my-color: #000;
+}
+body {
+  background-color: var(--my-color);
 }
 .logo {
   width: 100%;
@@ -20,30 +26,10 @@
   height: 350px;
 }
 
-.home-btn {
-  background-color: rgb(30, 216, 249);
-  color: black;
-  border: none;
-}
-
 .learn-more-btn {
   background-color: rgb(33, 213, 245);
   border: none;
   color: white;
-}
-
-.home-btn:hover {
-  background-color: rgb(30, 216, 249);
-  color: black;
-  border: none;
-}
-.join-btn {
-  background-color: #deb887 !important;
-  color: white;
-}
-
-.join-btn:hover {
-  /* background-color: #3a3a3a; */
 }
 
 .footerLogo {
