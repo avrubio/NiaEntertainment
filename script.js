@@ -1,49 +1,52 @@
-import { themeChange } from 'theme-change';
+import './style.css';
 
-themeChange();
-themeToggle();
-function themeToggle() {
-  var toggleEl = document.querySelector("[data-toggle-theme]");
-  var dataKey = toggleEl ? toggleEl.getAttribute("data-key") : null;
-  (function (theme = localStorage.getItem(dataKey ? dataKey : "theme")) {
-    if (localStorage.getItem(dataKey ? dataKey : "theme")) {
-      document.documentElement.setAttribute("data-theme", theme);
-      if (toggleEl) {
-        [...document.querySelectorAll("[data-toggle-theme]")].forEach((el) => {
-          el.classList.add(toggleEl.getAttribute("data-act-class"));
-        });
-      }
+document.addEventListener("DOMContentLoaded", function () {
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const body = document.body;
+
+  darkModeToggle.addEventListener("change", function () {
+    if (this.checked) {
+      body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+    } else {
+      body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
     }
-  })();
-  if (toggleEl) {
-    [...document.querySelectorAll("[data-toggle-theme]")].forEach((el) => {
-      el.addEventListener("click", function () {
-        var themesList = el.getAttribute("data-toggle-theme");
-        if (themesList) {
-          var themesArray = themesList.split(",");
-          if (
-            document.documentElement.getAttribute("data-theme") ==
-            themesArray[0]
-          ) {
-            if (themesArray.length == 1) {
-              document.documentElement.removeAttribute("data-theme");
-              localStorage.removeItem(dataKey ? dataKey : "theme");
-            } else {
-              document.documentElement.setAttribute(
-                "data-theme",
-                themesArray[1]
-              );
-              localStorage.setItem(dataKey ? dataKey : "theme", themesArray[1]);
-            }
-          } else {
-            document.documentElement.setAttribute("data-theme", themesArray[0]);
-            localStorage.setItem(dataKey ? dataKey : "theme", themesArray[0]);
-          }
-        }
-        [...document.querySelectorAll("[data-toggle-theme]")].forEach((el) => {
-          el.classList.toggle(this.getAttribute("data-act-class"));
-        });
-      });
-    });
+  });
+
+  // Check local storage for theme preference
+  const currentTheme = localStorage.getItem("theme");
+  if (currentTheme === "dark") {
+    body.classList.add("dark-mode");
+    darkModeToggle.checked = true;
   }
-}
+});
+
+// Get references to the tab buttons and tab contents
+const tabButtons = document.querySelectorAll('[role="tab"]');
+const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+// Hide all tab contents initially
+tabContents.forEach((tabContent) => {
+  tabContent.classList.add("hidden");
+});
+
+// Add click event listener to each tab button
+tabButtons.forEach((tabButton) => {
+  tabButton.addEventListener("click", function (event) {
+    // Prevent default behavior of button clicks
+    event.preventDefault();
+
+    // Get the ID of the clicked tab button
+    const tabId = event.target.getAttribute("aria-controls");
+
+    // Hide all tab contents
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.add("hidden");
+    });
+
+    // Show the corresponding tab content based on the clicked tab button
+    const activeTabContent = document.getElementById(tabId);
+    activeTabContent.classList.remove("hidden");
+  });
+});
