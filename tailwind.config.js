@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./**/*.js", "./*.html", "./aboutCollective/*.html"],
+  content: ["./**/*.js", "./*.html", "./aboutCollective/*.html", "./**/*.html"],
 
   plugins: [require("daisyui", "@tailwindcss/aspect-ratio")],
   daisyui: {
