@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.7.3",
     "postcss": "^8.4.38",
@@ -16,6 +17,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "theme-change": "^2.5.0"
+    "theme-change": "^2.5.0",
+    "windicss": "^3.5.6"
   }
 }

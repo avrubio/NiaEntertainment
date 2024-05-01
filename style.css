@@ -15,16 +15,16 @@ body {
 
 /* Default light mode styles */
 body {
-  background-color: rgb(198, 241, 249); /* Light background color */
+  background-color: white; /* background color */
   color: #000000; /* Light text color */
 }
 
 /* Dark mode styles */
-.dark-mode {
-  background-color: rgb(18, 45, 50);
+/* .dark-mode {
+  background-color: rgb(255, 255, 255);
   /* background-color: #121212; Dark background color */
   color: #ffffff; /* Dark text color */
-}
+} */
 
 .logo {
   width: 100%;
@@ -54,8 +54,4 @@ body {
 .hero > img {
   height: auto;
   width: 430px;
-}
-
-.jimi-paragraphs {
-  font-size: 1.145rem;
 }
