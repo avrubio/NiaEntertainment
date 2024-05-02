@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/src/assets/collab.css" />
+    <link rel="stylesheet" href="/src/assets/style.css">
     <link rel="shortcut icon" href="img/NiaLogo.svg" type="image/x-icon" />
 
     <title>Nia Entertainment - Shop</title>
@@ -16,7 +17,7 @@
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span class="absolute -inset-0.5"></span>
           <span class="sr-only">Open main menu</span>
           <!--
@@ -51,7 +52,7 @@
                 <a>Nia Entertainment</a>
                 <ul class="p-2">
                   <li><a href="/aboutNiaEnt/index.html">About</a></li>
-                  <li><a href="/aboutNiaAndJimi/index.html">Nia Ent. & Jimi</a></li>                
+                  <li><a href="/AboutNiaExtention/index.html">Collaborations</a></li>                
                 </ul>
               </li>
               <li>
@@ -113,7 +114,7 @@
                     <summary>Nia Entertainment</summary>
                     <ul class="p-2">
                       <li><a href="/aboutNiaEnt/index.html">About</a></li>
-                      <li><a href="/aboutNiaAndJimi/index.html">Nia Ent. & Jimi</a></li>                
+                      <li><a href="/AboutNiaExtention/index.html">Collaborations</a></li>                
                     </ul>
                   </details>
                 </li>
@@ -154,36 +155,21 @@
           
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <div class="dropdown dropdown-end">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle snipcart-checkout">
             
             <div class="indicator">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
               
-              <span class="badge badge-sm indicator-item">8</span>
+              <span class="badge badge-sm indicator-item snipcart-items-count"></span>
             </div>
             
           </div>
-          <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
-            <div class="card-body">
-              <span class="font-bold text-lg">8 Items</span>
-              <span class="text-info">Subtotal: $999</span>
-              <div class="card-actions">
-                <button class="btn btn-primary btn-block">View cart</button>
-              </div>
-              
-            </div>
-            
-          </div>
+      
           
         </div>
         <div class="dropdown dropdown-end">
          
-            <label class="cursor-pointer grid place-items-center">
-              <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"/>
-              <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
-              <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            </label>
-          
+         
         </div>
     
       </div>
@@ -195,7 +181,7 @@
 <!-- END of Navbar-->
 
 <main>  
-<div class=" px-6 py-24 sm:py-32 lg:px-8">
+<div class=" px-6 py-2 sm:py-10 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
     <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The Legacy of <br> NIA Entertainment</h2>
   </div>
@@ -208,7 +194,7 @@
   <img  class="max-width-30 mr-10 mb-10 lg:mb-0" src="/img/Dr Jeckyl & Mr Hyde.JPG" alt="" />
   <!-- Text content -->
   <section id="story-content" class="w-full lg:w-auto">
-    <h3 class="text-2xl font-semibold leading-8 tracking-tight text-white text-center">Dr Jeckyl & Mr Hyde</h3>
+    <h3 class="text-2xl font-semibold leading-8 tracking-tight text-black text-center">Dr Jeckyl & Mr Hyde</h3>
     <p class="relative m text-gray-600 sm:max-w-md lg:max-w-none">
       "The year was 1980. Tunde-Ra and I were busy promoting and distributing our new hit dance record, "Hooked on Your Love." We were also deeply involved with the everyday activities of our new record label, "Nia." Nevertheless, we made sure to make our annual trek to Harlem World to visit Fatman. Fats had just lost one of his legs from complications due to diabetes. Fats still managed the duties of his club, Harlem World; however, he was growing weaker by the day and couldn't do all the things that he wanted to do. <br>Fats sensed that his time was coming to an end and was forced to put his beloved record label, Rojac, to the side. Fatman revealed to Tunde and me a production formula that was passed on to him by Joe Robinson, the owner of Sugar Hill Records. <br> It was the same method that Joe used for the Sugar Hill Gang's new hit record called "Rapper's Delight." He insisted that we execute the same formula on a group he called "Dr. Jekyll and Mr. Hyde." Jekyll and Hyde were two young rappers who hung around Harlem World looking for a record deal. So we diligently followed Fatman's directions and took the two boys under our wings. We brought them to our label, Nia Records, and taught them the record business. Their given names were Andre Harrell and Alonzo Brown."
       <br><br>           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="humbleicons hi-info-circle"><path xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11h1v5.5m0 0h1.5m-1.5 0h-1.5M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9.5-4v-.5h.5V8h-.5z"/></svg>

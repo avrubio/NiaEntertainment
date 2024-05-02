@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "humbleicons": "^1.10.0",
-    "theme-change": "^2.5.0"
+    "theme-change": "^2.5.0",
     "windicss": "^3.5.6"
   }
 }
