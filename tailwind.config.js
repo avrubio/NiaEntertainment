@@ -2,7 +2,9 @@
 export default {
   content: ["./**/*.js", "./*.html", "./aboutCollective/*.html", "./**/*.html"],
 
-  plugins: [require("daisyui", "@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("daisyui", "@tailwindcss/aspect-ratio", "@tailwindcss/forms"),
+  ],
   daisyui: {
     themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "light", // name of one of the included themes for dark mode
