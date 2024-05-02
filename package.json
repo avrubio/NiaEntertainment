@@ -17,7 +17,8 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "theme-change": "^2.5.0",
+    "humbleicons": "^1.10.0",
+    "theme-change": "^2.5.0"
     "windicss": "^3.5.6"
   }
 }
