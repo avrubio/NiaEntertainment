@@ -13,7 +13,7 @@ export default defineConfig({
         aboutNiaExtension: resolve(__dirname, "/aboutNiaExtension/index.html"),
         shop: resolve(__dirname, "/shop/index.html"),
         contact: resolve(__dirname, "/contact/index.html"),
-        newReleases: resolve(__dirname, ".newReleases/index.html"),
+        newReleases: resolve(__dirname, "/newReleases/index.html"),
       },
     },
   },
