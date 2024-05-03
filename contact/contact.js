@@ -1,11 +1,4 @@
 const btn = document.getElementById("button");
-
-(function () {
-  emailjs.init({
-    publicKey: "Cj2rHe8sFqi1_cXBY",
-  });
-})();
-
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
